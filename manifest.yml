@@ -1,0 +1,23 @@
+---
+applications:
+#  - name: blue-service
+#    path: ./blue-service/target/blue-service-1.0.jar
+#    memory: 768M
+#    instances: 1
+#    random-route: true
+#    buildpacks:
+#      - https://github.com/cloudfoundry/java-buildpack.git
+  - name: green-service
+    path: ./green-service/target/green-service-1.0.jar
+    memory: 768M
+    instances: 1
+    random-route: true
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git
+#  - name: service-discovery-server
+#    path: ./service-discovery-server/target/service-discovery-server-1.0.jar
+#    memory: 768M
+#    instances: 1
+#    random-route: true
+#    buildpacks:
+#      - https://github.com/cloudfoundry/java-buildpack.git
